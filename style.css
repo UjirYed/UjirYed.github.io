@@ -1,0 +1,122 @@
+:root {
+  --text: #071013;
+  --muted: #6c757d;
+  --accent: #8c1515;
+  --bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e6e6e6;
+    --muted: #9aa0a6;
+    --accent: #e0726f;
+    --bg: #121212;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+p { margin: 0; }
+
+h1, h2 { color: var(--accent); font-weight: 500; }
+
+h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 0.5rem;
+}
+
+.accent { color: var(--accent); }
+.muted { color: var(--muted); }
+.small { font-size: 0.85rem; }
+.mono { font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 0.82rem; }
+
+/* ---------- header ---------- */
+.intro { text-align: center; }
+
+.photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.intro h1 {
+  font-size: 1.6rem;
+  margin: 0.5rem 0 0.1rem;
+}
+
+.affiliation { color: var(--muted); }
+
+.links {
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  font-weight: 600;
+}
+
+/* ---------- about ---------- */
+.about {
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+.about p + p { margin-top: 0.8rem; }
+
+/* ---------- interests / education ---------- */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3rem;
+}
+
+.interests { margin: 0; padding-left: 1.3rem; }
+
+.entry + .entry { margin-top: 0.6rem; }
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* ---------- news ---------- */
+.news { list-style: none; margin: 0; padding: 0; }
+.news li { margin-bottom: 0.25rem; }
+.news .mono { display: inline-block; min-width: 5.5rem; }
+
+/* ---------- publications / projects ---------- */
+.section-subtitle { margin-top: -0.3rem; margin-bottom: 0.8rem; }
+
+.pub { margin-bottom: 1.1rem; }
+.pub-title { font-weight: 500; }
+.pub .me { color: var(--text); font-weight: 600; }
+.pub-links a { margin-right: 0.6rem; }
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .two-col { grid-template-columns: 1fr; }
+  .about { text-align: left; }
+}
