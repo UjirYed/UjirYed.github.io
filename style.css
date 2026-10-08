@@ -1,8 +1,8 @@
 :root {
   --text: #071013;
   --muted: #6c757d;
-  --accent: #8c1515;
-  --highlight: #d64933;
+  --accent: #1d4f91;
+  --highlight: #2f6fd1;
   --on-highlight: #ffffff;
   --bg: #ffffff;
 }
@@ -11,8 +11,8 @@
   :root {
     --text: #e6e6e6;
     --muted: #9aa0a6;
-    --accent: #e0726f;
-    --highlight: #d64933;
+    --accent: #7fb0ff;
+    --highlight: #2f6fd1;
     --on-highlight: #ffffff;
     --bg: #121212;
   }
