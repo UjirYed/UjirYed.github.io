@@ -1,1 +1,176 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riju Dey</title>
+  <meta name="description" content="Riju Dey — operating systems and systems research. Columbia University, B.S. Computer Engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+
+    <!-- ============ HEADER ============ -->
+    <header class="intro">
+      <!-- Replace with your own square photo, e.g. images/profile.jpg -->
+      <img class="photo" src="images/profile.svg" alt="Photo of Riju Dey">
+      <h1>Riju Dey</h1>
+      <p class="affiliation"><span class="accent">B.S. Computer Engineering</span>, Columbia University</p>
+      <p class="mono muted">rd3054 [at] columbia [dot] edu</p>
+      <nav class="links">
+        <!-- Add cv.pdf to the repo root, then uncomment: <a href="cv.pdf">CV</a> -->
+        <a href="https://github.com/UjirYed">GitHub</a>
+        <a href="https://www.linkedin.com/in/riju-dey">LinkedIn</a>
+      </nav>
+    </header>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about">
+      <p>
+        I am a systems researcher and a recent graduate of <strong>Columbia University</strong>,
+        where I earned a B.S. in Computer Engineering <em>magna cum laude</em>.
+        At Columbia's <strong>Software Systems Lab</strong>, I work on operating systems and memory management,
+        most recently on <strong>bpf_fault</strong>, an eBPF-based framework for custom page fault handling
+        that will appear at <strong>SOSP 2026</strong>.
+      </p>
+      <p>
+        Previously, I built measurement tools and data pipelines for 6G wireless networks with
+        Nokia Bell Labs and AT&amp;T at Columbia's Wireless and Mobile Networking Lab, and interned as a
+        software engineer at MongoDB and Northwestern Mutual. I am applying to PhD programs in computer systems.
+      </p>
+    </section>
+
+    <!-- ============ INTERESTS + EDUCATION ============ -->
+    <div class="two-col">
+      <section>
+        <h2>Interests</h2>
+        <ul class="interests">
+          <li>Operating systems &amp; kernel extensibility (eBPF)</li>
+          <li>Memory management &amp; virtualization</li>
+          <li>Systems for ML &amp; vector search</li>
+          <li>Compilers &amp; programming languages</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <span>Columbia University</span>
+            <span class="accent">May 2026</span>
+          </div>
+          <p class="small muted">B.S. Computer Engineering, <em>magna cum laude</em></p>
+          <p class="small muted">GPA 3.99 / 4.0</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ NEWS ============ -->
+    <section>
+      <h2>News</h2>
+      <ul class="news">
+        <li><span class="mono muted">2026</span> <em>It's the Kernel's Fault!</em> (bpf_fault) accepted to <strong>SOSP 2026</strong>.</li>
+        <li><span class="mono muted">May 2026</span> Graduated from Columbia, <em>magna cum laude</em>.</li>
+        <li><span class="mono muted">May 2026</span> Joined MongoDB as a software engineering intern.</li>
+        <li><span class="mono muted">Jan 2025</span> Joined the Software Systems Lab at Columbia.</li>
+      </ul>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section>
+      <h2>Publications</h2>
+
+      <div class="pub">
+        <p class="pub-title">It's the Kernel's Fault! Custom Page Fault Handling With bpf_fault<span class="mono muted">, 2026, SOSP</span></p>
+        <p class="mono muted small">Tal Zussman, <strong class="me">Riju Dey</strong>, Hasan Zengin, Yiming Fang, David Hildenbrand, Asaf Cidon</p>
+        <!-- Add links when available: <p class="pub-links mono"><a href="#">pdf</a> <a href="#">code</a></p> -->
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH EXPERIENCE ============ -->
+    <section>
+      <h2>Research Experience</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span>Software Systems Lab, Columbia University</span>
+          <span class="accent">Jan 2025 – present</span>
+        </div>
+        <p class="small muted">Research Assistant</p>
+        <ul class="small details">
+          <li>Implemented VM live snapshotting for Firecracker VMs to evaluate bpf_fault, an eBPF-based page fault handling framework that reduces fault latency by 2.8–6.1× over userfaultfd.</li>
+          <li>Benchmarked approximate nearest neighbor (ANN) graph indices in C/C++ for web-scale vector search, targeting latency and memory improvements to DiskANN.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span>Wireless and Mobile Networking Lab, Columbia University</span>
+          <span class="accent">Jun 2024 – Aug 2024</span>
+        </div>
+        <p class="small muted">Research Assistant, in collaboration with Nokia Bell Labs &amp; AT&amp;T</p>
+        <ul class="small details">
+          <li>Developed test tooling for Nokia Bell Labs' experimental 140 GHz and 28 GHz channel sounders for 6G networks.</li>
+          <li>Built a pipeline fusing LiDAR and channel sounder data, reducing redundancy by ~70%, and a React/Go/ZeroMQ web app with AT&amp;T for allocating wireless resources in disaster areas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section>
+      <h2>Projects</h2>
+
+      <div class="pub">
+        <p class="pub-title">BOOM: A Programming Language for Music</p>
+        <p class="small">Designed and implemented a language and compiler for writing music, with a scanner, parser, and LLVM code generation in OCaml.</p>
+      </div>
+
+      <div class="pub">
+        <p class="pub-title">Energy-Aware Scheduling in Linux</p>
+        <p class="small">Built a custom scheduler for the Linux 6.8 kernel to optimize workloads, and implemented a custom file system (EZFS).</p>
+      </div>
+
+      <div class="pub">
+        <p class="pub-title">FPGA Projects</p>
+        <p class="small">A multi-threaded TCP chat client on the DE1-SoC (C, VGA framebuffer, sockets), and a VHDL piano on the Xilinx Artix-7 with real-time playback.</p>
+      </div>
+    </section>
+
+    <!-- ============ INDUSTRY ============ -->
+    <section>
+      <h2>Industry</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span>MongoDB</span>
+          <span class="accent">Summer 2026</span>
+        </div>
+        <p class="small muted">Software Engineering Intern: pre-flight permission validation for Oracle-to-MongoDB migrations in Relational Migrator.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span>Northwestern Mutual</span>
+          <span class="accent">Summer 2025</span>
+        </div>
+        <p class="small muted">Software Engineering Intern: ML deployment automation and a data-labeling platform for RAG training.</p>
+      </div>
+    </section>
+
+    <!-- ============ TEACHING & SERVICE ============ -->
+    <section>
+      <h2>Teaching &amp; Service</h2>
+      <ul class="interests small">
+        <li>Teaching Assistant, Programming Languages &amp; Translators (CS), Columbia</li>
+        <li>Teaching Assistant, Circuit Analysis (EE), Columbia</li>
+        <li>Treasurer &amp; PR Officer, IEEE Chapter at Columbia (2023 – present)</li>
+      </ul>
+    </section>
+
+    <footer class="mono muted small">Last updated October 2026</footer>
+  </main>
+</body>
+</html>
