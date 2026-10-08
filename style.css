@@ -91,7 +91,8 @@ h2 {
 
 .interests { margin: 0; padding-left: 1.3rem; }
 
-.entry + .entry { margin-top: 0.6rem; }
+.entry + .entry { margin-top: 0.8rem; }
+.details { margin: 0.2rem 0 0; padding-left: 1.3rem; }
 .entry-head {
   display: flex;
   justify-content: space-between;
